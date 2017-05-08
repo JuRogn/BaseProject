@@ -60,7 +60,7 @@ namespace WebHost
             services.AddCustomizedDataStore(Configuration);
             services.AddCustomizedIdentity();
 
-            services.AddTransient<IStringLocalizer, EfStringLocalizer>();
+            services.AddSingleton<IStringLocalizer, EfStringLocalizer>();
             services.AddSingleton<IStringLocalizerFactory, EfStringLocalizerFactory>();
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<IConfigurationRoot>(Configuration);

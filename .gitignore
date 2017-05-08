@@ -41,3 +41,4 @@
 /test/Module.Core.Tests/bin
 /src/WebHost/node_modules
 /src/WebHost/bower_components
+/src/WebHost/logs

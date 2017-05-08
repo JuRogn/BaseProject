@@ -87,7 +87,10 @@ namespace WebHost.Extensions
                 })
                 .AddViewLocalization()
                 //使用数据库本地化提供程序
-                .AddDataAnnotationsLocalization(o => o.DataAnnotationLocalizerProvider = (t, f) => { return f.Create(typeof(EfStringLocalizer)); });
+                .AddDataAnnotationsLocalization();
+                //(o => o.DataAnnotationLocalizerProvider =(t,f)=> {
+                //    return f.Create(typeof(EfStringLocalizer));
+                //} );
 
             foreach (var module in modules)
             {
