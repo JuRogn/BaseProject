@@ -56,7 +56,7 @@ gulp.task('clean-module', function () {
 
 gulp.task('copy-modules', ['clean-module'], function () {
     modules.forEach(function (module) {
-        gulp.src([mPaths.devModules + module.fullName + '/Views/**/*.*', mPaths.devModules + module.fullName + '/module.json'], { base: module.fullName })
+        gulp.src([mPaths.devModules + module.fullName + '/Views/**/*.*', mPaths.devModules + module.fullName + '/module.json'])//, { base: module.fullName }
             .pipe(gulp.dest(mPaths.hostModules + module.fullName));
         gulp.src(mPaths.devModules + module.fullName + '/bin/Debug/netstandard1.6/**/*.*')
             .pipe(gulp.dest(mPaths.hostModules + module.fullName + '/bin'));
