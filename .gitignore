@@ -7,6 +7,8 @@
 /src/Infrastructure/obj
 /src/WebHost/bin
 /src/WebHost/obj
+/src/WebHost/DevModules/Module.Core/bin
+/src/WebHost/DevModules/Module.Core/obj
 /src/WebHost/DevModules/Module.ActivityLog/bin
 /src/WebHost/DevModules/Module.ActivityLog/obj
 /src/WebHost/DevModules/Module.Catalog/bin
